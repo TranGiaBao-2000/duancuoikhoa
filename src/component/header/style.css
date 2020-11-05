@@ -1,0 +1,112 @@
+.header .header__logo span {
+  font-family: "Itim", cursive;
+  font-size: 35px;
+  color: #e50914;
+  text-transform: uppercase;
+}
+.header {
+  z-index: 100;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  padding: 15px 0;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.7) 5%,
+    rgba(0, 0, 0, 0)
+  );
+}
+.header__left {
+  display: flex;
+  align-items: center;
+}
+.header ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  margin: 0 0 0 20px;
+  padding: 0;
+}
+
+.header li a {
+  text-decoration: none;
+  margin-left: 20px;
+  color: #e5e5e5;
+}
+
+.header li a:hover {
+  color: #b3b3b3;
+}
+.header__login__button {
+  background-color: #e50914 !important;
+  line-height: normal;
+  padding: 7px 20px !important;
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: capitalize !important;
+  float: right;
+  color: #fff !important;
+  outline: none !important;
+}
+.storageIcon {
+  font-size: 50px !important;
+  margin-right: 20px;
+  color: #fff !important;
+  display: none !important;
+}
+.header__login__button:hover {
+  background-color: #bb0811 !important;
+}
+.dropdown {
+  background-color: transparent !important;
+}
+
+.header__search input {
+  outline: none;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 25px;
+  width: 250px;
+}
+
+.header__search input::-moz-selection,
+.header__search input::-webkit-selection {
+  background-color: #e50914;
+}
+
+.header__link__phone {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  background-color: #fff;
+  transform: translateX(-100%);
+}
+
+@media (max-width: 1000px) {
+  .header__link,
+  .header__login__button {
+    display: none !important;
+  }
+  .storageIcon {
+    display: block !important;
+  }
+}
+@media (max-width: 500px) {
+  .storageIcon {
+    font-size: 30px !important;
+    margin: 0 5px;
+  }
+  .header__logo span {
+    font-size: 25px !important;
+  }
+  .header__search input {
+    font-size: 18px;
+    width: 180px;
+  }
+}
