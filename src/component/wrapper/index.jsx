@@ -20,11 +20,11 @@ export default function Wrapper() {
           </span>
           <div className="wrapper__button">
             <Button className="wrapper__button__play">
-              <PlayArrowIcon />
+              <PlayArrowIcon className="play" />
               Play
             </Button>
             <Button className="wrapper__button__info">
-              <InfoOutlinedIcon />
+              <InfoOutlinedIcon className="info" />
               More Infomation
             </Button>
           </div>
